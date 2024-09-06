@@ -1,0 +1,149 @@
+
+.first{
+    
+    ul{
+        span{
+            font-weight: 600;
+        }
+        h2{
+            color: $black;
+        font-size: 1.4em;
+        margin-bottom: 14px;
+    
+        font-weight: 500;
+        }
+        @include flexbox(center,start,column,15px);
+        color: $thirdc;
+        font-size: 1.2em;
+        line-height: 1.6em;
+        font-weight: 400;
+        .shop{ color:rgb(0, 0, 0);
+        
+            span{
+             font-size: 1em;
+             font-weight: 600;
+            
+     
+            }
+            i{
+             font-size: 1.2em;
+            }
+            &::after{ height: 1px;}
+             }
+             .twoicons{
+                 margin-top: 20px;
+                 @include flexbox(center,center,row,15px);
+                 .circle{
+                     width: 40px;
+                     height: 40px;
+                   
+                     i{font-size: 1em;
+                     color: $black;
+                 transition: all 0.3s ease-in-out;}
+                     &:hover{
+                         background-color: transparent;
+                         color: inherit;
+                         &:nth-child(1) {
+                          border-color:$facebook-cl;
+                          i{color: $facebook-cl;}
+                         }
+                         &:nth-child(2) {
+                             border-color:$twitter-cl;
+                             i{color:$twitter-cl;}
+                            }
+                            &:nth-child(3) {
+                             border-color: $instagram-cl;
+                             i{color:$instagram-cl;}
+                            }
+                            &:nth-child(4) {
+                             border-color:$tiktok-cl;
+                             i{color: $tiktok-cl;}
+                            }
+                            &:nth-child(5) {
+                             border-color:$pinterest-cl;
+                             i{color:$pinterest-cl;}
+                            }
+     
+                     }
+                 }
+                
+             }
+}}
+.second{
+    
+        ul{
+            h2{
+                color: $black;
+            font-size: 1.4em;
+            margin-bottom: 14px;
+        
+            font-weight: 500;
+            }
+            @include flexbox(center,start,column,15px);
+            color: $thirdc;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            font-weight: 400;
+         
+          li{   transition: 0.3s all ease-in-out;
+            &:hover{
+                
+                color: $black;
+            
+        }
+          }
+}}
+
+.usd{
+    ul{
+        @include flexbox(start,center,row , 25px);
+    
+        span{font-weight: 400;}
+       
+        
+        font-size: 1.2rem;
+        li{
+            @include flexbox(center,center,row , 0);
+           
+            i{
+                margin-left: 10px;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+#input{
+    margin: 20px 0;
+    position: relative;
+width: 333px;
+height: 55px;
+background-color: $txtc;
+.button{
+    position: absolute;
+    bottom: 0;
+    right: 6px;
+    background-color: $black;
+    color: $txtc;
+    font-size: 1em;
+    padding: 9px 27px;
+    border-bottom-left-radius: 0;
+   
+    border-bottom-right-radius: 0;
+    i{
+        font-size: 1em;
+    }
+
+    &::before {
+       
+        background: linear-gradient(90deg, transparent, rgba(221, 213, 213, 0.374), transparent);
+      
+    }
+ }
+padding-top: 17px;
+padding-left: 15px;
+input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+}

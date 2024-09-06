@@ -1,0 +1,86 @@
+#happy{
+    background-image: url(https://demo-ecomus-global2.myshopify.com/cdn/shop/files/image_bg_testimonials.jpg?v=1696046476&width=2000);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    .happiness{
+        background-color: $txtc;
+        border: 1px solid rgb(236 236 236);
+        padding: 60.5px 49.5px 0 49.5px;
+        &:hover{
+            .circle{
+                opacity: 1;
+            }
+        }
+        .stars{
+            @include flexbox(start,center,row,10px);
+            color: $color-pr-rating;
+            font-size: 1.5em;
+            margin-bottom: 22px;
+        }
+        span{
+        font-weight: 600;
+        line-height: 1.4em;
+        font-size: 1.6em;
+        
+        
+        
+        }
+        .author{
+            padding: 60px 0;
+            border-bottom: 1px solid rgba(113, 113, 113, 0.545);
+            font-size: 1.3em;
+            @include flexbox(center,start,column,15px);
+            .name{
+                font-weight: 600;
+            }
+        }
+        p{
+            font-size: 1.6em;
+            line-height: 1.4em;
+            
+            margin-top: 11px;
+        }
+        .circle{
+            width: 50px;
+            height: 50px;
+            i{font-size: 1em;}
+        opacity: 0;}
+            .sales{
+                margin: 37px 0;
+                @include flexbox(space-between,center,row);
+               .product{@include flexbox(center,center,row,30px);
+                .producttxt{
+                    @include flexbox(center,start,column,10px);
+                    font-size: 1.3em;
+    .productprice {
+        @include flexbox(center,center,row,10px);
+        font-size: 1.1em;
+        color: $black;
+        font-weight: 500;
+        h6{color:$thirdc;
+            text-decoration: line-through;
+        }
+        
+    }
+                }
+    
+                .productimg{
+                    width: 64px;
+                    height: 48.45px;
+                    overflow: hidden;
+                    img{
+                        @extend %baseimg;
+                    }
+                }
+               }
+            }
+    }
+    .headtxt{
+       text-align: center;
+       font-size: 4em;
+       padding: 40px 0;
+       font-weight: 500;
+       color: $txtc;
+    }
+}

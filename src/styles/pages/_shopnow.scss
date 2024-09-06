@@ -1,0 +1,69 @@
+.cards{
+    .cardimg{
+        height: 660px;
+       
+        overflow: hidden;
+        position: relative;
+        color: $txtc;
+        font-weight: 400px;
+   
+        &:hover{
+            img{ transform: scale(1.07);}
+         }
+       
+        img{
+            @extend %baseimg;
+            transition: .5s all ease-in-out;
+        }
+        .txt{
+            padding: 50px 40px;
+            position: absolute;
+        inset: 0;
+            @include flexbox(space-between,start,column);
+            h3{
+                margin-bottom: 17px;
+                font-size: 2.5em;
+            }
+            p{
+                font-size: 1.8em;
+                span{
+                    font-weight: 600;
+                }
+            }
+            .shop{
+                display: inline-block;
+                position: relative;
+                transition: .5s all ease-in-out;
+                &::after{
+                    content: "";
+                    width:100%;
+                    height: 0.5px;
+                    position: absolute;
+        bottom: -5px;
+                    left: 0;
+                    background-color:$txtc;
+                    transition: .5s all ease-in-out;
+                }
+                @include flexbox(center,center,row,10px);
+                span{
+                    font-size: 1.2em;
+                    font-weight: 600;
+                    
+                }
+                i{
+                    font-size: 1.7em;
+                    font-weight: 100;
+                }
+                &:hover{
+                    color: black;
+                  
+                }
+                &:hover::after{
+                    background-color: black;
+                }
+            }
+        
+        }
+
+    }
+}

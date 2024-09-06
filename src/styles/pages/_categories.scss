@@ -1,0 +1,114 @@
+.head{
+    @include flexbox(start,center,row,20px);
+   p{
+        font-weight: 700;
+        font-size: 1.4em;
+        
+
+    }
+}
+.twoicons{
+    @include flexbox(center,center,row,5px);
+    .circle{
+        width: 25px;
+        height: 25px;
+        border: 1px solid black;
+        border-radius:50%;
+        transition: all 0.5s ease-in-out;
+        @include flexbox(center,center);
+        i{font-size: 0.7em;}
+        &:hover{
+            background-color: $black;
+            color: $txtc;
+        }
+    }
+   
+}
+.categoryimg{
+    
+        height: 361px;
+       width: 100%;
+        overflow: hidden;
+        position: relative;
+        color: $txtc;
+        font-weight: 400px;
+   
+        &:hover{
+            img{ transform: scale(1.07);}
+         }
+       
+        img{
+            @extend %baseimg;
+            transition: 2s all ease-in-out;
+        }
+        .button {
+            position: absolute;
+            bottom: 25px;
+            left: 15px;
+            padding: 9px 22px;
+            background-color: $txtc;
+            color: black;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            font-weight: 500;
+            font-size: 1.6em;
+           
+            @include flexbox(center,center,row,0px);
+            transition: all ease-in-out 0.4s;
+            display: inline-flex; 
+        
+            p {
+                position: relative;
+                z-index: 2; 
+               
+             
+            }
+        
+            i {
+                font-size: 20px;
+                position: relative;
+                margin-left: -25px; 
+                z-index: 1;
+                opacity: 0;
+                color: white;
+                transition: all ease-in-out 0.4s;
+            }
+        
+            &:hover {
+                background-color: black;
+                color: white;
+        gap: 5px;
+                
+        
+                i {
+                    margin-left: 0; 
+                    opacity: 1;
+                }
+            }
+        }
+        
+        
+
+        
+
+        
+        
+        }
+        .space{
+            @include flexbox(start,end);
+            height: 361px;
+            width: 100%;
+             overflow: hidden;
+             border: 1px solid $black;
+
+             .txt{
+                padding: 37px;
+                @include flexbox(center,start,column,30px);
+                font-size: 2.5em;
+                line-height: 1.2em;
+                .circle{
+                    width: 50px;
+                    height: 50px;
+                    i{font-size: 0.5em;}}
+             }
+        }

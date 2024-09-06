@@ -1,0 +1,1077 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#happy .happiness .sales .product .productimg img, #spring .rightsideimg img, .categoryimg img, #summer .rightsideimg img, .imagecards .cardimg .hoverimg img, .imagecards .cardimg img, .cards .cardimg img, #carouselExampleIndicators .rightsideimg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  font-family: "Albert Sans", sans-serif;
+}
+
+header .left ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 25px;
+  font-size: 1.2rem;
+}
+header .left ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+header .left ul li i {
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+header .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .right ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: black;
+}
+header .right ul li i {
+  position: relative;
+}
+header .right ul li i .zero {
+  font-family: "Albert Sans", sans-serif;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+nav .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 25px;
+}
+nav .navbar ul li {
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: block;
+  position: relative;
+}
+nav .navbar ul li::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background-color: black;
+  transition: 0.5s ease-in-out;
+}
+nav .navbar ul li:hover::after {
+  width: 100%;
+}
+nav .navbar ul li i {
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+#home .carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+  left: 60px;
+  z-index: 2;
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+#home .carousel-indicators .dot {
+  border-radius: 50%;
+  height: 13px;
+  width: 13px;
+  outline: 2px solid transparent;
+  border: 0;
+  outline-offset: 5px;
+}
+#home .carousel-indicators .dot:hover {
+  background-color: black;
+  outline-color: black;
+}
+
+#carouselExampleIndicators {
+  height: 800px;
+}
+#carouselExampleIndicators .rightsideimg {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+#carouselExampleIndicators .text {
+  padding-top: 150px;
+  padding-left: 60px;
+  height: 100%;
+}
+#carouselExampleIndicators .text h2 {
+  font-weight: 400;
+  font-size: 6.1rem;
+  margin-bottom: 1.8rem;
+  line-height: 7rem;
+}
+#carouselExampleIndicators .text p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: rgb(84, 84, 84);
+  margin-bottom: 4.2rem;
+}
+@keyframes slide-right-to-left {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+.button {
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 1.6rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 18px 35px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 1;
+}
+.button:hover {
+  color: inherit;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  right: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(104, 102, 102, 0.374), transparent);
+  z-index: 0;
+  border-radius: 6px;
+  transition: opacity 1s ease-in-out;
+}
+.button:hover::before {
+  animation: slide-right-to-left 1s forwards;
+}
+.button .inside {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.button .inside i {
+  font-size: 1.8rem;
+}
+
+.cards .cardimg {
+  height: 660px;
+  overflow: hidden;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-weight: 400px;
+}
+.cards .cardimg:hover img {
+  transform: scale(1.07);
+}
+.cards .cardimg img {
+  transition: 0.5s all ease-in-out;
+}
+.cards .cardimg .txt {
+  padding: 50px 40px;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+.cards .cardimg .txt h3 {
+  margin-bottom: 17px;
+  font-size: 2.5em;
+}
+.cards .cardimg .txt p {
+  font-size: 1.8em;
+}
+.cards .cardimg .txt p span {
+  font-weight: 600;
+}
+.cards .cardimg .txt .shop {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.cards .cardimg .txt .shop::after {
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s all ease-in-out;
+}
+.cards .cardimg .txt .shop span {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.cards .cardimg .txt .shop i {
+  font-size: 1.7em;
+  font-weight: 100;
+}
+.cards .cardimg .txt .shop:hover {
+  color: black;
+}
+.cards .cardimg .txt .shop:hover::after {
+  background-color: black;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 70px;
+}
+.navigation ul li {
+  position: relative;
+  display: inline-block;
+}
+.navigation ul li a {
+  color: rgb(84, 84, 84);
+  font-size: 3em;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+}
+.navigation ul li a:hover {
+  color: rgb(0, 0, 0);
+}
+.navigation ul li a::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  transition: 0.5s all ease-in-out;
+  opacity: 0;
+}
+.navigation ul li a:active::before, .navigation ul li a:focus::before {
+  opacity: 1;
+}
+.navigation ul li a:active, .navigation ul li a:focus {
+  font-weight: 450;
+  color: rgb(0, 0, 0);
+}
+.navigation ul li a:focus {
+  outline: none;
+}
+
+.imagecards {
+  position: relative;
+}
+.imagecards:hover .cardicons {
+  opacity: 1;
+  transform: translateY(0);
+}
+.imagecards:hover .cardicons .square:nth-child(1) {
+  transform: translateY(-10px);
+  transition-delay: 0.1s;
+}
+.imagecards:hover .cardicons .square:nth-child(2) {
+  transform: translateY(-10px);
+  transition-delay: 0.2s;
+}
+.imagecards:hover .cardicons .square:nth-child(3) {
+  transform: translateY(-10px);
+  transition-delay: 0.3s;
+}
+.imagecards:hover .cardicons .square:nth-child(4) {
+  transform: translateY(-10px);
+  transition-delay: 0.4s;
+}
+.imagecards .cardimg {
+  height: 229px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.imagecards .cardimg .hoverimg {
+  height: 229px;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 0.5s all ease-in-out;
+}
+.imagecards .cardimg .hoverimg img {
+  transition: 0.5s all ease-in-out;
+}
+.imagecards .cardimg .hoverimg:hover img {
+  transform: scale(1.07);
+}
+.imagecards .cardimg:hover .hoverimg {
+  opacity: 1;
+}
+.imagecards .cardtxt {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgb(0, 0, 0);
+}
+.imagecards .cardtxt .price {
+  font-size: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.imagecards .cardtxt .price span {
+  color: rgba(0, 0, 0, 0.55);
+  text-decoration: line-through;
+}
+.imagecards .cardtxt .price h2 {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+.imagecards .cardtxt .price #red {
+  color: rgb(219, 18, 21);
+}
+.imagecards .cardicons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  position: absolute;
+  bottom: 95px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
+}
+.imagecards .cardicons .square {
+  width: 42px;
+  height: 42px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+.imagecards .cardicons .square i {
+  font-size: 25px;
+}
+.imagecards .cardicons .square:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+.imagecards #sale {
+  background-color: orangered;
+  border-radius: 50px;
+  padding: 4px 10px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#summer .leftsidetxt {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  background-color: rgb(231, 228, 223);
+  padding: 30px 0 30px 80px;
+}
+#summer .leftsidetxt h1 {
+  font-weight: 400;
+  font-size: 4.7rem;
+  line-height: 1.1em;
+}
+#summer .leftsidetxt p {
+  font-weight: 400;
+  font-size: 1.3em;
+  max-width: 510px;
+  color: rgb(84, 84, 84);
+  line-height: 1.5em;
+}
+#summer .rightsideimg {
+  height: 441px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#summer .rightsideimg::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(109, 106, 106, 0.189);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease-in-out;
+}
+#summer .rightsideimg:hover::before {
+  transform: scaleY(1);
+}
+#summer .rightsideimg::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(109, 106, 106, 0.189);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out 0.4s;
+}
+#summer .rightsideimg:hover::after {
+  transform: scaleY(1);
+}
+
+.shop {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+}
+.shop::after {
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  transition: 0.5s all ease-in-out;
+}
+.shop span {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.shop i {
+  margin-left: 10px;
+  font-size: 1.7em;
+  font-weight: 100;
+}
+.shop:hover {
+  color: black;
+}
+
+.head {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.head p {
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.twoicons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+.twoicons .circle {
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.twoicons .circle i {
+  font-size: 0.7em;
+}
+.twoicons .circle:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.categoryimg {
+  height: 361px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-weight: 400px;
+}
+.categoryimg:hover img {
+  transform: scale(1.07);
+}
+.categoryimg img {
+  transition: 2s all ease-in-out;
+}
+.categoryimg .button {
+  position: absolute;
+  bottom: 25px;
+  left: 15px;
+  padding: 9px 22px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-weight: 500;
+  font-size: 1.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0px;
+  transition: all ease-in-out 0.4s;
+  display: inline-flex;
+}
+.categoryimg .button p {
+  position: relative;
+  z-index: 2;
+}
+.categoryimg .button i {
+  font-size: 20px;
+  position: relative;
+  margin-left: -25px;
+  z-index: 1;
+  opacity: 0;
+  color: white;
+  transition: all ease-in-out 0.4s;
+}
+.categoryimg .button:hover {
+  background-color: black;
+  color: white;
+  gap: 5px;
+}
+.categoryimg .button:hover i {
+  margin-left: 0;
+  opacity: 1;
+}
+
+.space {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  height: 361px;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgb(0, 0, 0);
+}
+.space .txt {
+  padding: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 2.5em;
+  line-height: 1.2em;
+}
+.space .txt .circle {
+  width: 50px;
+  height: 50px;
+}
+.space .txt .circle i {
+  font-size: 0.5em;
+}
+
+#spring .leftsidetxt {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 50px;
+  background-color: rgb(255, 255, 255);
+  padding: 28px 28px 28px 15px;
+}
+#spring .leftsidetxt h6 {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+#spring .leftsidetxt h1 {
+  font-weight: 400;
+  font-size: 4.7rem;
+  line-height: 1.1em;
+}
+#spring .leftsidetxt p {
+  font-weight: 400;
+  font-size: 1.4em;
+  color: rgb(84, 84, 84);
+  line-height: 1.5em;
+}
+#spring .leftsidetxt .button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+}
+#spring .leftsidetxt .button::before {
+  background: linear-gradient(90deg, transparent, rgba(221, 213, 213, 0.374), transparent);
+}
+#spring .rightsideimg {
+  height: 708.26px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#spring .rightsideimg::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(109, 106, 106, 0.189);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease-in-out;
+}
+#spring .rightsideimg:hover::before {
+  transform: scaleY(1);
+}
+#spring .rightsideimg::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(109, 106, 106, 0.189);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out 0.4s;
+}
+#spring .rightsideimg:hover::after {
+  transform: scaleY(1);
+}
+
+.shipping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+}
+.shipping .circle {
+  width: 73px;
+  height: 73px;
+  border: 1px solid rgba(84, 84, 84, 0.268);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shipping .circle i {
+  font-size: 30px;
+}
+.shipping .text {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1em;
+}
+.shipping .text h1 {
+  font-size: 1.6em;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+.shipping .text p {
+  color: rgb(84, 84, 84);
+  font-size: 1.2em;
+  line-height: 1.6em;
+  font-weight: 400;
+}
+
+.first ul {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 15px;
+  color: rgb(84, 84, 84);
+  font-size: 1.2em;
+  line-height: 1.6em;
+  font-weight: 400;
+}
+.first ul span {
+  font-weight: 600;
+}
+.first ul h2 {
+  color: rgb(0, 0, 0);
+  font-size: 1.4em;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+.first ul .shop {
+  color: rgb(0, 0, 0);
+}
+.first ul .shop span {
+  font-size: 1em;
+  font-weight: 600;
+}
+.first ul .shop i {
+  font-size: 1.2em;
+}
+.first ul .shop::after {
+  height: 1px;
+}
+.first ul .twoicons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+.first ul .twoicons .circle {
+  width: 40px;
+  height: 40px;
+}
+.first ul .twoicons .circle i {
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+.first ul .twoicons .circle:hover {
+  background-color: transparent;
+  color: inherit;
+}
+.first ul .twoicons .circle:hover:nth-child(1) {
+  border-color: rgb(59, 89, 152);
+}
+.first ul .twoicons .circle:hover:nth-child(1) i {
+  color: rgb(59, 89, 152);
+}
+.first ul .twoicons .circle:hover:nth-child(2) {
+  border-color: rgb(85, 85, 85);
+}
+.first ul .twoicons .circle:hover:nth-child(2) i {
+  color: rgb(85, 85, 85);
+}
+.first ul .twoicons .circle:hover:nth-child(3) {
+  border-color: rgb(224, 53, 102);
+}
+.first ul .twoicons .circle:hover:nth-child(3) i {
+  color: rgb(224, 53, 102);
+}
+.first ul .twoicons .circle:hover:nth-child(4) {
+  border-color: rgb(254, 44, 85);
+}
+.first ul .twoicons .circle:hover:nth-child(4) i {
+  color: rgb(254, 44, 85);
+}
+.first ul .twoicons .circle:hover:nth-child(5) {
+  border-color: rgb(203, 32, 39);
+}
+.first ul .twoicons .circle:hover:nth-child(5) i {
+  color: rgb(203, 32, 39);
+}
+
+.second ul {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 15px;
+  color: rgb(84, 84, 84);
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+.second ul h2 {
+  color: rgb(0, 0, 0);
+  font-size: 1.4em;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+.second ul li {
+  transition: 0.3s all ease-in-out;
+}
+.second ul li:hover {
+  color: rgb(0, 0, 0);
+}
+
+.usd ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 25px;
+  font-size: 1.2rem;
+}
+.usd ul span {
+  font-weight: 400;
+}
+.usd ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+.usd ul li i {
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+
+#input {
+  margin: 20px 0;
+  position: relative;
+  width: 333px;
+  height: 55px;
+  background-color: rgb(255, 255, 255);
+  padding-top: 17px;
+  padding-left: 15px;
+}
+#input .button {
+  position: absolute;
+  bottom: 0;
+  right: 6px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  padding: 9px 27px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#input .button i {
+  font-size: 1em;
+}
+#input .button::before {
+  background: linear-gradient(90deg, transparent, rgba(221, 213, 213, 0.374), transparent);
+}
+#input input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+#happy {
+  background-image: url(https://demo-ecomus-global2.myshopify.com/cdn/shop/files/image_bg_testimonials.jpg?v=1696046476&width=2000);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#happy .happiness {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(236, 236, 236);
+  padding: 60.5px 49.5px 0 49.5px;
+}
+#happy .happiness:hover .circle {
+  opacity: 1;
+}
+#happy .happiness .stars {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  color: #ff7b54;
+  font-size: 1.5em;
+  margin-bottom: 22px;
+}
+#happy .happiness span {
+  font-weight: 600;
+  line-height: 1.4em;
+  font-size: 1.6em;
+}
+#happy .happiness .author {
+  padding: 60px 0;
+  border-bottom: 1px solid rgba(113, 113, 113, 0.545);
+  font-size: 1.3em;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 15px;
+}
+#happy .happiness .author .name {
+  font-weight: 600;
+}
+#happy .happiness p {
+  font-size: 1.6em;
+  line-height: 1.4em;
+  margin-top: 11px;
+}
+#happy .happiness .circle {
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+#happy .happiness .circle i {
+  font-size: 1em;
+}
+#happy .happiness .sales {
+  margin: 37px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#happy .happiness .sales .product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+#happy .happiness .sales .product .producttxt {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.3em;
+}
+#happy .happiness .sales .product .producttxt .productprice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 1.1em;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+#happy .happiness .sales .product .producttxt .productprice h6 {
+  color: rgb(84, 84, 84);
+  text-decoration: line-through;
+}
+#happy .happiness .sales .product .productimg {
+  width: 64px;
+  height: 48.45px;
+  overflow: hidden;
+}
+#happy .headtxt {
+  text-align: center;
+  font-size: 4em;
+  padding: 40px 0;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=style.css.map */

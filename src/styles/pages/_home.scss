@@ -1,0 +1,123 @@
+#home{
+    
+
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: 80px;
+        left: 60px;
+        z-index: 2;
+        display: flex;
+        justify-content:start;
+        gap: 15px;
+        padding: 0;
+        margin:0;
+        
+    
+        .dot{
+            border-radius: 50%;
+            height: 13px;
+            width: 13px;
+            outline:2px solid transparent;
+            border: 0;
+            
+            outline-offset: 5px;
+            &:hover{
+                background-color: black;
+                    outline-color: black;
+            
+            }
+            
+        }
+      
+        
+    }
+    
+    }
+    
+    
+    #carouselExampleIndicators{
+        height: 800px;
+      
+        .rightsideimg{
+            width: 100%;
+            height: 800px ;
+            overflow: hidden;
+            img{
+                @extend %baseimg;
+            }
+        }
+        .text{
+            padding-top: 150px;
+            padding-left: 60px;
+            height: 100%;
+            h2{
+                font-weight: 400;
+                font-size: 6.1rem;
+                margin-bottom: 1.8rem;
+                line-height: 7rem;
+            }
+            p{
+                font-weight: 400;
+                font-size: 1.8rem;
+                color: $thirdc;
+                margin-bottom: 4.2rem;
+            }
+         @keyframes slide-right-to-left {
+        0% {
+            right: -100%;
+        }
+        100% {
+            right: 100%;
+        }
+    }
+    
+  
+    
+    
+        }
+    }
+    .button {
+        position: relative;
+        color: $black;
+        font-weight: 500;
+        font-size: 1.6rem;
+        display: inline-block;
+        text-decoration: none;
+        padding: 18px 35px;
+        border: 1px solid white;
+        background-color: white;
+        border-radius: 6px;
+        overflow: hidden;
+        z-index: 1;
+        &:hover{
+            color: inherit;
+        }
+    
+        &::before {
+            content: '';
+            position: absolute;
+            right: -100%;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(104, 102, 102, 0.374), transparent);
+            z-index: 0;
+            border-radius: 6px; 
+            transition: opacity 1s ease-in-out;
+        }
+    
+        &:hover::before {
+            animation: slide-right-to-left 1s forwards; 
+        }
+    
+        .inside {
+            position: relative;
+            z-index: 2; 
+            @include flexbox(center, center, row, 10px);
+            
+            i {
+                font-size: 1.8rem;
+            }
+        }
+    }

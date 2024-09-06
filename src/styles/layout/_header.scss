@@ -1,0 +1,89 @@
+body{
+    font-family: "Albert Sans", sans-serif;
+}
+
+
+header{
+    .left{
+        ul{
+            @include flexbox(start,center,row , 25px);
+           
+            
+            font-size: 1.2rem;
+            li{
+                @include flexbox(center,center,row , 0);
+               
+                i{
+                    margin-left: 10px;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+    .center{
+        @include flexbox(center,center);
+        
+       
+    }
+    .right{
+        ul{
+         
+            @include flexbox(end,center,row , 15px);
+        
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: black;
+            li{
+               i{position: relative;
+                .zero{
+                    font-family: "Albert Sans", sans-serif;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: black;
+                    padding: 10px;
+                    font-size: 15px;
+                    @include flexbox(center,center,row );
+                    color: white;
+                    position: absolute;
+                    top:-10px;
+                    right:-10px;
+    
+                }
+               }
+            }
+        }
+    }
+}
+nav{
+    .navbar{
+
+        @include flexbox(center,center);
+        ul{
+            @include flexbox(center,center,row,25px);
+            li{
+                font-size: 1.4rem;
+                font-weight: 500;
+                display: block;
+                position: relative;
+                &::after{
+                    content: "";
+                    width: 0;
+                    height: 1px;
+                    position: absolute;
+        bottom: -10px;
+                    left: 0;
+                    background-color: black;
+                    transition: .5s ease-in-out;
+                }
+                &:hover::after{
+                        width: 100%;
+                    }
+                    i{
+                        font-weight: 100;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+    }
+}
