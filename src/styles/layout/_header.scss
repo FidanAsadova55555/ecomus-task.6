@@ -55,7 +55,11 @@ header{
         }
     }
 }
-nav{
+nav{@media (max-width: 768px) {
+    .element-to-hide {
+        display: none;
+    }
+}
     .navbar{
 
         @include flexbox(center,center);

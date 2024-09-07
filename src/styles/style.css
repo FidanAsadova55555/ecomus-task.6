@@ -122,6 +122,11 @@ header .right ul li i .zero {
   right: -10px;
 }
 
+@media (max-width: 768px) {
+  nav .element-to-hide {
+    display: none;
+  }
+}
 nav .navbar {
   display: flex;
   justify-content: center;
