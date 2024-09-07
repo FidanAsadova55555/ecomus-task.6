@@ -56,7 +56,7 @@ table {
   box-sizing: border-box;
 }
 
-#happy .happiness .sales .product .productimg img, #spring .rightsideimg img, .categoryimg img, #summer .rightsideimg img, .imagecards .cardimg .hoverimg img, .imagecards .cardimg img, .cards .cardimg img, #carouselExampleIndicators .rightsideimg img {
+.productimg img, .rightimg img, #happy .happiness .sales .product .productimg img, .rightsideimg img, .categoryimg img, #summer .rightsideimg img, .imagecards .cardimg .hoverimg img, .imagecards .cardimg img, .cards .cardimg img, #carouselExampleIndicators .rightsideimg img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -700,7 +700,7 @@ nav .navbar ul li i {
   font-size: 0.5em;
 }
 
-#spring .leftsidetxt {
+.leftsidetxt {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -710,36 +710,37 @@ nav .navbar ul li i {
   background-color: rgb(255, 255, 255);
   padding: 28px 28px 28px 15px;
 }
-#spring .leftsidetxt h6 {
+.leftsidetxt h6 {
   font-weight: 700;
   font-size: 1.3em;
 }
-#spring .leftsidetxt h1 {
+.leftsidetxt h1 {
   font-weight: 400;
   font-size: 4.7rem;
   line-height: 1.1em;
 }
-#spring .leftsidetxt p {
+.leftsidetxt p {
   font-weight: 400;
   font-size: 1.4em;
   color: rgb(84, 84, 84);
   line-height: 1.5em;
 }
-#spring .leftsidetxt .button {
+.leftsidetxt .button {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   font-size: 1.2em;
 }
-#spring .leftsidetxt .button::before {
+.leftsidetxt .button::before {
   background: linear-gradient(90deg, transparent, rgba(221, 213, 213, 0.374), transparent);
 }
-#spring .rightsideimg {
+
+.rightsideimg {
   height: 708.26px;
   width: 100%;
   overflow: hidden;
   position: relative;
 }
-#spring .rightsideimg::before {
+.rightsideimg::before {
   content: "";
   position: absolute;
   left: 0;
@@ -751,10 +752,10 @@ nav .navbar ul li i {
   transform-origin: bottom;
   transition: transform 0.3s ease-in-out;
 }
-#spring .rightsideimg:hover::before {
+.rightsideimg:hover::before {
   transform: scaleY(1);
 }
-#spring .rightsideimg::after {
+.rightsideimg::after {
   content: "";
   position: absolute;
   right: 0;
@@ -766,7 +767,7 @@ nav .navbar ul li i {
   transform-origin: top;
   transition: transform 0.3s ease-in-out 0.4s;
 }
-#spring .rightsideimg:hover::after {
+.rightsideimg:hover::after {
   transform: scaleY(1);
 }
 
@@ -1071,7 +1072,109 @@ nav .navbar ul li i {
 #happy .headtxt {
   text-align: center;
   font-size: 4em;
-  padding: 40px 0;
+  margin-bottom: 30px;
   font-weight: 500;
   color: rgb(255, 255, 255);
+}
+#happy .happycustomer {
+  position: relative;
+}
+#happy .happycustomer .circle {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.111);
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.455);
+}
+#happy .happycustomer .circle i {
+  font-size: 1.2em;
+}
+#happy .happycustomer .circle:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+#happy .happycustomer .one {
+  position: absolute;
+  left: -25px;
+  top: 280px;
+  justify-content: start;
+}
+#happy .happycustomer .two {
+  position: absolute;
+  right: -25px;
+  top: 280px;
+  justify-content: start;
+}
+
+.rightimg {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 866, 66px;
+}
+.productimg {
+  height: 165px;
+  width: 100%;
+  overflow: hidden;
+}
+.productinfo {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  height: 100%;
+  font-size: 1.3em;
+}
+.productinfo h5 {
+  margin-bottom: 13px;
+}
+.productinfo span {
+  font-weight: 600;
+  margin-bottom: 23px;
+  letter-spacing: 0.1em;
+}
+.productinfo .pb {
+  padding: 20px 5px 20px 20px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  border: 1px solid #e0dcdc;
+  border-radius: 4px;
+}
+.productinfo .pb h2 {
+  color: rgb(84, 84, 84);
+}
+.productinfo .pb i {
+  font-size: 1.2em;
+}
+.productinfo .pb:active {
+  border-color: #939090;
+}
+
+.prcard {
+  padding: 44px 0;
+  border-bottom: 1px solid #e0dcdc;
+}
+
+.leftsidetxt {
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  overflow: hidden;
+}
+.leftsidetxt .sticky {
+  margin-top: 25px;
+  padding: 10px 35px;
+}
+.leftsidetxt .sticky .inside {
+  font-size: 1.1em;
+  gap: 20px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

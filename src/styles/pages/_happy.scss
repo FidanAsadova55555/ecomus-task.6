@@ -79,8 +79,38 @@
     .headtxt{
        text-align: center;
        font-size: 4em;
-       padding: 40px 0;
+      margin-bottom: 30px;
        font-weight: 500;
        color: $txtc;
     }
-}
+   
+    .happycustomer{
+        position: relative;
+        .circle{
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgba(0, 0, 0, 0.111);
+            border-radius:50%;
+            transition: all 0.5s ease-in-out;
+            @include flexbox(center,center);
+            background-color: rgba(255, 255, 255, 0.455);
+            i{font-size: 1.2em;}
+            &:hover{
+                background-color: $black;
+                color: $txtc;
+            }}
+        .one{position:absolute;
+            left: -25px;
+            top:280px;
+            justify-content: start;
+         
+        }
+        .two{position:absolute;
+            right: -25px;
+            top:280px;
+            justify-content: start;
+           
+
+        }
+    }
+    }

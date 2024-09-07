@@ -1,0 +1,72 @@
+.rightimg{
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 866,66px;
+img{
+    @extend %baseimg;
+}
+}
+.productimg{
+    height: 165px;
+    width: 100%;
+    overflow: hidden;
+    img{
+        @extend %baseimg;
+    }
+}
+
+    .productinfo{
+        @include flexbox(center,start,column);
+        height: 100%;
+        
+            font-size: 1.3em;
+            h5{
+                margin-bottom: 13px;
+            }
+            span{
+                font-weight: 600;
+                margin-bottom: 23px;
+                letter-spacing: 0.1em;
+            }
+        .pb {
+                padding: 20px 5px 20px 20px;
+                @include flexbox(end,center,row,20px);
+                border: 1px solid #e0dcdc;
+                border-radius: 4px;
+               h2{
+                color: $thirdc;
+               }
+               i{font-size: 1.2em;}
+               &:active{
+                border-color:#939090;
+               }
+               
+                
+            }
+        
+    }
+    .prcard{
+        padding: 44px 0;
+        border-bottom: 1px solid #e0dcdc;
+    }
+    .leftsidetxt{
+        padding-right: 0;
+        padding-bottom: 0;
+       padding-top: 0;
+        overflow: hidden;
+      .sticky{
+        margin-top: 25px;
+        padding: 10px 35px;
+        .inside{
+            
+            font-size: 1.1em;
+            gap: 20px;
+               text-align: center;
+           }
+      }
+       
+    }
+   
