@@ -56,7 +56,7 @@ table {
   box-sizing: border-box;
 }
 
-.productimg img, .rightimg img, #happy .happiness .sales .product .productimg img, .rightsideimg img, .categoryimg img, #summer .rightsideimg img, .imagecards .cardimg .hoverimg img, .imagecards .cardimg img, .cards .cardimg img, #carouselExampleIndicators .rightsideimg img {
+.productimg img, .rightimg img, #happy .happiness .sales .product .productimg img, .rightsideimg img, .categoryimg img, #summer .rightsideimg img, .imagecards .cardimg .hoverimg img, .imagecards .cardimg img, .cards .cardimg img, #carouselExampleIndicators .rightsideimgg img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -192,7 +192,7 @@ nav .navbar ul li i {
 #carouselExampleIndicators {
   height: 800px;
 }
-#carouselExampleIndicators .rightsideimg {
+#carouselExampleIndicators .rightsideimgg {
   width: 100%;
   height: 800px;
   overflow: hidden;
@@ -745,7 +745,7 @@ nav .navbar ul li i {
 }
 
 .rightsideimg {
-  height: 708.26px;
+  height: 743px;
   width: 100%;
   overflow: hidden;
   position: relative;
