@@ -706,7 +706,6 @@ nav .navbar ul li i {
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  gap: 50px;
   background-color: rgb(255, 255, 255);
   padding: 28px 28px 28px 15px;
 }

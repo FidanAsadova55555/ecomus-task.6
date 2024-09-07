@@ -1,42 +1,44 @@
 
   
-    .leftsidetxt{
-     height: 100%;
-     @include flexbox(center,start,column,50px);
-     background-color: $txtc;
-     padding:28px 28px  28px 15px;
-     h6{ font-weight: 700;
-        font-size: 1.3em;
-       
-    
 
-     }
-     h1{
-         font-weight: 400;
-         font-size: 4.7rem;
-        
-         line-height: 1.1em;
-     }
-     p{
-         font-weight: 400;
-         font-size: 1.4em;
-         
-         color: $thirdc;
-         
-         line-height: 1.5em;
-     }
-     .button{
-        background-color: $black;
-        color: $txtc;
-        font-size: 1.2em;
-
-        &::before {
+        .leftsidetxt{
+            height: 100%;
+            @include flexbox(center,start,column);
+            background-color: $txtc;
+            padding:28px 28px  28px 15px;
+            h6{ font-weight: 700;
+               font-size: 1.3em;
+              
            
-            background: linear-gradient(90deg, transparent, rgba(221, 213, 213, 0.374), transparent);
-          
-        }
-     }
-    }
+       
+            }
+            h1{
+                font-weight: 400;
+                font-size: 4.7rem;
+               
+                line-height: 1.1em;
+            }
+            p{
+                font-weight: 400;
+                font-size: 1.4em;
+                
+                color: $thirdc;
+                
+                line-height: 1.5em;
+            }
+            .button{
+               background-color: $black;
+               color: $txtc;
+               font-size: 1.2em;
+       
+               &::before {
+                  
+                   background: linear-gradient(90deg, transparent, rgba(221, 213, 213, 0.374), transparent);
+                 
+               }
+            }
+           }
+  
      .rightsideimg{
          height:708.26px;
          width: 100%;
